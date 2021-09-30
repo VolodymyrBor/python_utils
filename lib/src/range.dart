@@ -25,10 +25,3 @@ class Range extends Iterable<int> {
   }
 
 }
-
-
-void main() {
-  for (var i in Range(10, 1, step: 2)) {
-    print(i);
-  }
-}

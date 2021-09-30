@@ -36,15 +36,3 @@ Iterable<Pair<T, int>> enumerate<T>(Iterable<T> it, {int start = 0}) sync* {
     i++;
   }
 }
-
-
-void main() {
-  for (var item in zip([[1, 2, 3], [2, 3], [5, 6]])) {
-    print(item);
-  }
-
-  for (var pair in enumerate([3, 5, 6])) {
-    print('${pair.first}, ${pair.second}');
-  }
-
-}

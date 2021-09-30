@@ -3,8 +3,8 @@
 /// More dartdocs go here.
 library pythonic_utils;
 
-export 'src/pythonic_utils_base.dart';
 
+export 'src/strtools.dart';
+export 'src/itertools.dart';
+export 'src/pair.dart' show Pair;
 export 'src/range.dart' show Range;
-
-// TODO: Export any libraries intended for clients of this package.
