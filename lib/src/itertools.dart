@@ -1,11 +1,11 @@
 import './pair.dart';
 
 
-class StopIterationError implements Exception {}
+class StopIteration implements Exception {}
 
 
 T next<T>(Iterator<T> it) {
-  if (!it.moveNext()) { throw StopIterationError(); }
+  if (!it.moveNext()) { throw StopIteration(); }
   return it.current;
 }
 
@@ -15,12 +15,12 @@ Iterable<List<T>> zip<T>(Iterable<Iterable<T>> items) sync* {
     for (var it in items) it.iterator
   ];
 
-  while (true) {
+  while (true && its.isNotEmpty) {
     List<T> res = [];
     for (var it in its) {
       try {
         res.add(next(it));
-      } on StopIterationError {
+      } on StopIteration {
         return;
       }
     }
