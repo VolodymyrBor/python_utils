@@ -6,7 +6,7 @@ import 'package:pythonic_utils/pythonic_utils.dart';
 
 void main() {
 
-  group('Range tests', () {
+  group('Pair tests', () {
 
     setUp(() {});
 
