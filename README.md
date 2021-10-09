@@ -1,4 +1,4 @@
-# PythonicUtils
+# PythonUtils
 
 Pythonic useful functions and classes for Dart.
 
