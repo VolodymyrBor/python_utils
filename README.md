@@ -38,15 +38,39 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+### itertools
+
+#### next()
 
 ```dart
-const like = 'sample';
+var it = [1, 2, 3].iterator;
+print(next(it));
+print(next(it));
+print(next(it));
+print(next(it));
 ```
 
-## Additional information
+Output:
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```
+>>> 1
+>>> 2
+>>> 3
+trow StopIteration
+```
+
+#### zip()
+
+```dart
+var l1 = [1, 2, 3];
+var l2 = [-1, -2, -3];
+print(zip(l1, l2));
+```
+
+Output:
+
+```
+>>> [[1, -1], [2, -2], [3, -3]]
+```
+
+TODO: added more usage
