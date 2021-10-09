@@ -57,4 +57,21 @@ void main() {
 
   });
 
+  group('enumerate', () {
+
+    setUp(() {});
+
+    test('test', () {
+      var l = [1, 2, 3];
+      var i = 0;
+      for (var item in enumerate(l)) {
+        expect(item.first, l[i]);
+        expect(item.second, i);
+        i++;
+      }
+
+    });
+
+  });
+
 }
