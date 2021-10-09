@@ -1,6 +1,8 @@
 name: pythonic_utils
 description: Pythonic utils for Dart.
-version: 0.0.1
+version: 0.1.0
+repository: https://github.com/VolodymyrBor/python_utils.git
+
 # homepage: https://www.example.com
 
 environment:
